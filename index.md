@@ -6,7 +6,7 @@ description: An overview of the GDS Design System, including; styleguides, compo
 
 The homepage of a style guide should provide high-level information around what the design system is, what benefits it provides, who it's for, and how to get started with it. Like any good index page, it should provide clear navigation to key parts of the website.
 
-<div class="u-margin-bottom-double"><a href="{{ "/getting-started.html" | prepend: site.baseurl }}" class="c-btn">Get Started</a></div>
+[Get Started]({{ "/getting-started" | prepend: site.baseurl }}){: .c-btn}
 
 ## Design System Benefits
 Explain how the design system benefits users and the business. For inspiration, check out over 180 examples of design systems at [Styleguides.io](http://styleguides.io/examples).
