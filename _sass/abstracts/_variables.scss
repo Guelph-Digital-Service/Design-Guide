@@ -56,6 +56,10 @@ $color-gray-60: #666;
 $color-gray-73: #444;
 $color-gray-93: #131313;
 $color-black: #000;
+$color-gray-dark: #333333;
+$color-gray-lighter: #f5f5f5;
+$color-gray-10: #e5e5e5;
+$color-gray-04: #f5f5f5;
 
 /**
  * Utility Colors
@@ -73,6 +77,15 @@ $color-utility-warning-light: #fffecf;
 
 
 
+$color-app-red: #d82424;
+$color-app-green: #00af53;
+$color-app-ruby: #b10040;
+$color-app-blue: #225896;
+$color-app-sea-blue: #005f7f;
+$color-app-torquoise: #00aca8;
+$color-app-med-gray: #545459;
+$color-app-blue-light: #e1efff;
+$color-app-blue-deep: #111122;
 
 
 /*------------------------------------*\
@@ -107,6 +120,9 @@ $font-size-large: 1.4375rem;
  */
 $l-max-width: 60rem;
 $l-max-width-narrow: 36rem;
+
+$l-max-width: 84em;
+$l-max-width-text: 38em;
 
 
 
@@ -157,7 +173,8 @@ $border-radius: 4px;
 $fade-quick: 0.15s;
 $fade-long: 0.4s;
 $anim-ease: ease-in-out;
-
+$anim-base-easing: ease;
+$anim-base-duration: .3s;
 
 
 
@@ -177,3 +194,7 @@ $bp-med-2: 48em;
 $bp-large: 50em;
 $bp-large-2: 56em;
 $bp-xl: 62em;
+
+
+$bp-xl-2: 67em;
+$bp-xl-3: $l-max-width;

@@ -2,6 +2,7 @@
 layout: page
 title: Support
 description: The support page provides information about getting help with using the design system
+permalink: /support
 ---
 
 Talk about the importance of communication between [makers and users](http://atomicdesign.bradfrost.com/chapter-5/#design-system-makers-and-users) of the design system.
