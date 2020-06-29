@@ -5,10 +5,16 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: pages/guidelines
+  path: guidelines
   label: Guidelines
   create: all
   match: "**/*"
+- type: directory
+  path: pages
+  label: Other Pages
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".md"
 - type: jekyll-pages
   label: Pages
   create: all
