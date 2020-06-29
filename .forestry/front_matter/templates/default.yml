@@ -5,6 +5,9 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: page
+  config:
+    required: true
 - type: text
   name: title
   label: title
@@ -14,3 +17,9 @@ fields:
 - type: text
   name: permalink
   label: permalink
+- name: group
+  type: text
+  config:
+    required: false
+  label: Group
+  description: which group does this page belong to?
