@@ -1,0 +1,35 @@
+---
+label: Landing - cards
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: type
+  label: type
+- type: text
+  name: group
+  label: group
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: description
+  label: description
+- type: field_group_list
+  name: cards
+  label: cards
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: link
+    label: link
+  - type: text
+    name: description
+    label: description
