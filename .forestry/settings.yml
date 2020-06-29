@@ -16,23 +16,23 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: templates
+  path: page-templates
   label: Page Templates
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: devcomponents
   label: Dev Components
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: components
   label: Author Components
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: pages
   label: Other Pages
