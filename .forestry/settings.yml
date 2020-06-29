@@ -9,7 +9,7 @@ sections:
   label: Styles
   create: all
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: directory
   path: guidelines
   label: Guidelines
@@ -20,7 +20,7 @@ sections:
   label: Other Pages
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
 - type: jekyll-pages
   label: Pages
   create: all
