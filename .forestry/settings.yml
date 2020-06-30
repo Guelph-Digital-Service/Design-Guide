@@ -29,14 +29,8 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: dev-components
-  label: Development Components
-  create: all
-  match: "**/*"
-  new_doc_ext: ".md"
-- type: directory
   path: components-dev
-  label: Dev Components
+  label: Developer Components
   create: all
   match: "**/*"
   new_doc_ext: md
@@ -49,7 +43,6 @@ sections:
 - type: document
   path: pages/cpt.md
   label: Custom Post Types
-  match: "**/*"
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
