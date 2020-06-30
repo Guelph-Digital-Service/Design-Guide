@@ -5,19 +5,16 @@ group: guidelines
 permalink: /guidelines
 
 title: Guidelines
-description: This is the guidelines overview description. It will elaborate on the guidelines and principles that need to be followed to build applications.
+description: Guidelines to help you adhere to the City of Guelph design system
 
 cards:
-- title: Design Principles
-  link: /guidelines/principles.html
-  description: Design principles
-- title: Code conventions
-  link: #
-  description: awef
-- title: Accessibility
-  link: #
-  description: awef
+- title: BLOBLAHTEST
+  link: /contribute
+  description: BLOOBLAHTEST
+
 
 ---
 
-Guidelines is where you'll find UX guidance for specific aspects of app/site design (navigation models, data entry, form validation, accessibility, and so on). These will give high-level tours of the relevant components and styles, with links to the specific pages in the components and styles sections for more detailed guidelines on each element.  Each guideline is effectively an article on good usage.
+The following guidelines are where you'll find UX, design and development guidance for specific aspects of City of Guelph digital and print assets. These will give high-level tours of the relevant components and styles, with links to the specific pages in the components and styles sections for more detailed guidelines on each element. Each of the following guidelines is effectively an article on the proper usage of City of Guelph design components and procedures.
+
+These guidelines were derived from pre-formulated City of Guelph policies/procedures as well as commonly utilized web and design guidelines such as [YellowShoe](https://yellowshoe.com.au/standards/#html), [CodeGuide](https://codeguide.co/#html), and [Gravity Dept](https://manuals.gravitydept.com/code/css).

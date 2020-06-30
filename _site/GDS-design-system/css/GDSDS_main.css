@@ -21,6 +21,7 @@
    #BASE
 \*------------------------------------*/
 /* @import "base/reset.css"; */
+@import "base/generalstyles.css"; 
 
 /*------------------------------------*\
    #COMPONENTS

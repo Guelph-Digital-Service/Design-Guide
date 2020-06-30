@@ -1,17 +1,18 @@
 ---
 layout: page
 title: Support
-description: The support page provides information about getting help with using the design system
+description: Help is just an email away!
 permalink: /support
 ---
 
-Talk about the importance of communication between [makers and users](http://atomicdesign.bradfrost.com/chapter-5/#design-system-makers-and-users) of the design system.
+There will inevitably be people who help make and maintain the City of Guelph design system, and there will be people who will be users of this design system. There may be overlap between these two groups, but establishing the roles of makers and users is important nonetheless. The design system makers are the ones who create, maintain, and govern the system, and they need to work closely together to ensure that the system is smart, flexible, scalable, and addresses the needs of the users and business. The design system users are the teams across the organization who will take the system and employ its interface patterns to specific applications. Please consider whether you are more of a maker or a user in this context!
+
 
 ## Support channels
-Where can people go for help with the design system? Where do people talk about the design system? Where should bugs be filed? Cross-link to the <a href="{{ "/contribute.html" | prepend: site.baseurl }}">contributing page</a> as there's often overlap between this kind of information.
+For support on using this system please contact [Nic Durish](mailto:nic.durish@guelph.ca) or [WebServices](mailto:webservices@guelph.ca).
 
 ## Support opportunities
-Training and support can [take many forms](http://atomicdesign.bradfrost.com/chapter-5/#training-and-support), including:
+Training and support can take many forms, including:
 
 - Pair sessions
 - Workshops
@@ -23,5 +24,6 @@ Training and support can [take many forms](http://atomicdesign.bradfrost.com/cha
 - Chat tools
 - Issue trackers
 - Forums
+- Etc.
 
-Take the time to present all support and training information; it helps give users confidence you have their backs when they get stuck.
+Please let us know what type of support works best for you :)

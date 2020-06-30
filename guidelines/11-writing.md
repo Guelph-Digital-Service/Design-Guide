@@ -8,4 +8,8 @@ description: Guidelines for writing best practices
 
 ---
 
-Guidelines go here.
+Authorship, content, and language guidelines go here!
+
+## Voice & Tone
+
+For inspiration, check out MailChimp's fantastic [Voice and Tone](http://voiceandtone.com/) website.

@@ -196,13 +196,13 @@ code[class*="language-"], pre[class*="language-"] { font-family: monospace !impo
 /*------------------------------------*\ #LAYOUT
 \*------------------------------------*/
 /** Layout Container 1) Caps the width of the content to the maximum width and centers the container */
-.l-container { max-width: 84em; margin: 0 auto; }
+.l-container { max-width: 60rem; margin: 0 auto; }
 
 /** Narrow Layout Container 1) This narrow layout container is for lists, forms, and other singular objects that aren't dashboard-y kinds of displays */
-.l-container--narrow { max-width: 36rem; }
+.l-container--narrow { max-width: 42rem; }
 
 /**  1) This narrow layout container is for lists, forms, and other singular objects that aren't dashboard-y kinds of displays */
-.l-linelength-container { max-width: 35rem; }
+.l-linelength-container { max-width: 42rem; }
 
 /*------------------------------------*\ #LAYOUT SECTIONS
 \*------------------------------------*/
@@ -400,7 +400,7 @@ code[class*="language-"], pre[class*="language-"] { font-family: monospace !impo
 /*------------------------------------*\ #LOGO
 \*------------------------------------*/
 /** Branding image or text of the site */
-.c-logo { /** Logo within vertical header */ }
+.c-logo { margin: auto; /** Logo within vertical header */ }
 @media all and (min-width: 62em) { .c-logo { margin: 0; } }
 @media all and (min-width: 62em) { .c-header--vertical .c-logo { margin: 1rem 0; } }
 
@@ -423,7 +423,7 @@ code[class*="language-"], pre[class*="language-"] { font-family: monospace !impo
 .c-page-header__title { margin-bottom: 0.2rem; }
 
 /** Page description */
-.c-page-header__desc { margin-bottom: 2rem; font-size: 1.2rem; color: #808080; max-width: 36rem; }
+.c-page-header__desc { margin-bottom: 2rem; font-size: 1.2rem; color: #808080; max-width: 42rem; }
 
 /*------------------------------------*\ #PRIMARY NAVIGATION
 \*------------------------------------*/

@@ -80,42 +80,35 @@
 		</li><!-- end c-nav__list__item -->
 
 
+		<li class="c-primary-nav__item {% if page.url contains '/components' %}is-active{% endif %}">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/components' %} is-active  is-current{% endif %}" href="{{ "/components/" | prepend: site.baseurl }}">
 
-		<li class="c-primary-nav__item {% if page.url contains '/templates' %}is-active{% endif %}">
-
-			<a href="{{ "/templates/index" | prepend: site.baseurl }}" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/templates' %} is-active  is-current{% endif %}">
-
-				<span class="c-primary-nav__span">Page Templates</span>
+				<span class="c-primary-nav__text">Components</span>
 
 				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
 					<use href="{{ "/assets/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
 				</svg>
 
-			</a>
+			</a><!--end c-primary-nav__link-->
 
-			<ul class="c-primary-nav__sublist js-nav-dropdown {% if page.url contains '/templates' %} is-active{% endif %}">
-			{% for my_page in site.pages %}
-				{% if my_page.title %}
-					{% if my_page.group == "templates" %}
-					<li class="c-primary-nav__item">
-						<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
-                        {% if my_page.layout == "landing" %}
+			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'components' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/components' %} is-active{% endif %}">
 
-                        <span class="c-primary-nav__text">Overview</span>
+        {% include primary-nav-item.html label='Buttons' subgroup='buttons' %}
 
-                        {% else %}
+				{% include primary-nav-item.html label='Callouts' subgroup='callouts' %}
 
-                        {{ my_page.title }}
+				{% include primary-nav-item.html label='Linkages' subgroup='linkages' %}
 
-                        {% endif %}
-						</a>
-					</li>
-					{% endif %}
-				{% endif %}
-			{% endfor %}
+        {% include primary-nav-item.html label='Lists and collections' subgroup='lists-and-collections' %}
+
+        {% include primary-nav-item.html label='Media' subgroup='media' %}
+
+        {% include primary-nav-item.html label='Tables' subgroup='tables' %}
+
+        {% include primary-nav-item.html label='Text' subgroup='text' %}
+
 			</ul>
-
-		</li><!-- end c-nav__list__item -->
+		</li>
 
 
 		<li class="c-primary-nav__item {% if page.url contains '/devcomponents' %}is-active{% endif %}">
@@ -133,56 +126,69 @@
 
 				{% include primary-nav-item.html label='Blocks and cards' subgroup='blocks-and-cards' %}
 
-				{% include primary-nav-item.html label='Headers and footers' subgroup='headers-and-footers' %}
-
-        {% include primary-nav-item.html label='Icons' subgroup='icons' %}
-
-        {% include primary-nav-item.html label='Interactive panels' subgroup='interactive' %}
-
-        {% include primary-nav-item.html label='Messaging' subgroup='messaging' %}
+				{% include primary-nav-item.html label='Header' subgroup='header' %}
 
         {% include primary-nav-item.html label='Navigation' subgroup='navigation' %}
 
+				{% include primary-nav-item.html label='Footer' subgroup='footer' %}
+
+        {% include primary-nav-item.html label='Icons' subgroup='icons' %}
+
+				{% include primary-nav-item.html label='Grid systems' subgroup='grid-systems' %}
+
+        {% include primary-nav-item.html label='Interactive panels' subgroup='interactive' %}
+
+
+
 
 			</ul>
 		</li>
 
 
-		<li class="c-primary-nav__item {% if page.url contains '/components' %}is-active{% endif %}">
-			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/components' %} is-active  is-current{% endif %}" href="{{ "/components/" | prepend: site.baseurl }}">
 
-				<span class="c-primary-nav__text">Components</span>
+				<li class="c-primary-nav__item {% if page.url contains '/templates' %}is-active{% endif %}">
 
-				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
-					<use href="{{ "/assets/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
-				</svg>
+					<a href="{{ "/templates/index" | prepend: site.baseurl }}" class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger {% if page.url contains '/templates' %} is-active  is-current{% endif %}">
 
-			</a><!--end c-primary-nav__link-->
+						<span class="c-primary-nav__span">Page Templates</span>
 
-			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'components' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/components' %} is-active{% endif %}">
+						<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+							<use href="{{ "/assets/icons.svg#chevron-right" | prepend: site.baseurl }}"></use>
+						</svg>
 
-        {% include primary-nav-item.html label='Buttons' subgroup='buttons' %}
+					</a>
 
-				{% include primary-nav-item.html label='Charts and graphs' subgroup='charts-and-graphs' %}
+					<ul class="c-primary-nav__sublist js-nav-dropdown {% if page.url contains '/templates' %} is-active{% endif %}">
+					{% for my_page in site.pages %}
+						{% if my_page.title %}
+							{% if my_page.group == "templates" %}
+							<li class="c-primary-nav__item">
+								<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
+		                        {% if my_page.layout == "landing" %}
 
-                {% include primary-nav-item.html label='Lists and collections' subgroup='lists-and-collections' %}
+		                        <span class="c-primary-nav__text">Overview</span>
 
-                {% include primary-nav-item.html label='Media' subgroup='media' %}
+		                        {% else %}
 
-                {% include primary-nav-item.html label='Tables' subgroup='tables' %}
+		                        {{ my_page.title }}
 
-                {% include primary-nav-item.html label='Text' subgroup='text' %}
+		                        {% endif %}
+								</a>
+							</li>
+							{% endif %}
+						{% endif %}
+					{% endfor %}
+					</ul>
 
-			</ul>
-		</li>
+				</li><!-- end c-nav__list__item -->
 
 
 		<li class="c-primary-nav__item {% if page.url contains '/workflows' %}is-active{% endif %}">
 
 			{% for my_page in site.pages %}
-				{% if my_page.url == "/workflows.html" %}
-				<a href="{{ "/workflows.html" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/workflows.html' %}is-active is-current{% endif %}">
-					<span class="c-primary-nav__text">Workflows</span>
+				{% if my_page.url == "/custom-post-types" %}
+				<a href="{{ "/custom-post-types" | prepend: site.baseurl }}" class="c-primary-nav__link {% if page.url == '/custom-post-types' %}is-active is-current{% endif %}">
+					<span class="c-primary-nav__text">Custom Post Types</span>
 				</a>
 				{% endif %}
 			{% endfor %}
