@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: pages
+  label: Resource Pages
+  create: documents
+  match: "**/*"
+  exclude: cpt.md
+  new_doc_ext: md
+- type: directory
   path: guidelines
   label: Guidelines
   create: all
@@ -16,11 +23,17 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: page-templates
-  label: Page Templates
-  create: documents
+  path: components
+  label: Author Components
+  create: all
   match: "**/*"
   new_doc_ext: md
+- type: directory
+  path: dev-components
+  label: Development Components
+  create: all
+  match: "**/*"
+  new_doc_ext: ".md"
 - type: directory
   path: components-dev
   label: Dev Components
@@ -28,17 +41,15 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: components
-  label: Author Components
-  create: all
-  match: "**/*"
-  new_doc_ext: md
-- type: directory
-  path: pages
-  label: Other Pages
+  path: page-templates
+  label: Page Templates
   create: documents
   match: "**/*"
   new_doc_ext: md
+- type: document
+  path: pages/cpt.md
+  label: Custom Post Types
+  match: "**/*"
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
