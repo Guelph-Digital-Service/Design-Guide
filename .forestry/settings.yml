@@ -22,7 +22,7 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: devcomponents
+  path: components-dev
   label: Dev Components
   create: all
   match: "**/*"
@@ -48,6 +48,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
+  install_dependencies_command: bundle install --full-index --path vendor/bundle
   preview_docker_image: forestryio/ruby:2.6
   mount_path: "/srv"
   working_dir: "/srv"
