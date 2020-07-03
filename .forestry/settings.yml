@@ -35,14 +35,11 @@ sections:
   match: "**/*"
   new_doc_ext: md
 - type: directory
-  path: page-templates
-  label: Page Templates
-  create: documents
+  path: wp-theme
+  label: Wordpress Theme
+  create: all
   match: "**/*"
   new_doc_ext: md
-- type: document
-  path: pages/cpt.md
-  label: Custom Post Types
 upload_dir: assets
 public_path: "/assets"
 front_matter_path: ''
