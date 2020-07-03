@@ -1,8 +1,7 @@
 ---
-layout: landing
-type: landing
-group: templates
-permalink: /templates/default
+layout: page
+subgroup: templates
+permalink: wptheme//templates/default
 
 title: Default template
 description: Page Template for default pages

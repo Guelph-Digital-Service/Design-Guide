@@ -135,8 +135,8 @@ ol, ul { list-style: none; }
 /*------------------------------------*\ #MAIN ELEMENT
 \*------------------------------------*/
 /** Main element */
-[role=main] { display: block; flex: 1 0 auto; padding: 1rem; }
-@media all and (min-width: 62em) { [role=main] { padding-top: 1.5rem; } }
+main { display: block; flex: 1 0 auto; padding: 1rem; }
+@media all and (min-width: 62em) { main { padding-top: 1.5rem; } }
 
 /*------------------------------------*\ #MEDIA
 \*------------------------------------*/
@@ -423,7 +423,7 @@ code[class*="language-"], pre[class*="language-"] { font-family: monospace !impo
 .c-page-header__title { margin-bottom: 0.2rem; }
 
 /** Page description */
-.c-page-header__desc { margin-bottom: 2rem; font-size: 1.2rem; color: #808080; max-width: 42rem; }
+.c-page-header__desc { margin-bottom: 2rem; font-size: 1.2rem; color: #444; max-width: 42rem; }
 
 /*------------------------------------*\ #PRIMARY NAVIGATION
 \*------------------------------------*/

@@ -13,7 +13,7 @@ By properly understanding and utilizing; the guidelines that we follow, the styl
 The more eyes and edits we receive on this document the better! Our aim is to first have policies and procedures formally defined so that their explicit implementation can be provided here, but in general we are **always** looking for recommendations on how we can make this system better, features we can add, and bloat that can be removed. For more information on how to contribute please visit the [Contribution page]({{ "/contribute" | prepend: site.baseurl }})
 
 ## Support
-Refering to this document is not enough, we must be considerate of the entire design system to properly comply with it's rulings and implementation, if you are unsure about anything, don't hesitate to get in touch! More information can be found on the[Support page]({{ "/support" | prepend: site.baseurl }}).
+Refering to this document is not enough, we must be considerate of the entire design system to properly comply with it's rulings and implementation, if you are unsure about anything, don't hesitate to get in touch! More information can be found on the [Support page]({{ "/support" | prepend: site.baseurl }}).
 
 
 [Get Started]({{ "/getting-started" | prepend: site.baseurl }}){: .c-btn}
