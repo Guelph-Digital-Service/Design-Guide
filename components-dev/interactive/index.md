@@ -1,8 +1,8 @@
 ---
 layout: component-category
-group: components
+group: devcomponents
 subgroup: interactive
-permalink: /components/interactive/
+permalink: /devcomponents/interactive/
 
 title: Interactive
 description: Components for revealing/hiding content for more compressed and focused layouts

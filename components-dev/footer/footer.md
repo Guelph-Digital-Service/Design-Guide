@@ -1,9 +1,9 @@
 ---
 layout: component-detail
-group: components
-subgroup: headers-and-footers
+group: devcomponents
+subgroup: footer
 image: ../../images/c-footer.png
-permalink: /components/headers-and-footers/footers.html
+permalink: /devcomponents/headers-and-footers/footers.html
 
 title: Footer
 description: Logo and housekeeping links displayed at page bottom

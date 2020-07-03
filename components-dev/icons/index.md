@@ -1,8 +1,8 @@
 ---
 layout: component-category
-group: components
+group: devcomponents
 subgroup: icons
-permalink: /components/icons/
+permalink: /devcomponents/icons/
 
 title: Icons
 description: Icon reference and usage

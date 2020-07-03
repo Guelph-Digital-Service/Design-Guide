@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: devcomponents
 subgroup: interactive
-permalink: /components/interactive/tabs.html
+permalink: /devcomponents/interactive/tabs.html
 
 title: Tabs
 description: Unordered list of links where the each link targets different information

@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: devcomponents
 subgroup: blocks-and-cards
-permalink: /components/blocks-and-cards/tile.html
+permalink: /devcomponents/blocks-and-cards/tile.html
 
 title: Tile
 status: Deprecated

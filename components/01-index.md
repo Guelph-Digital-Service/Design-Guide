@@ -1,10 +1,9 @@
 ---
-layout: landing
-type: landing
+layout: component-viewall
 group: components
 permalink: /components
 
-title: Components
+title: All Components
 description: Placeholder text...
 
 ---

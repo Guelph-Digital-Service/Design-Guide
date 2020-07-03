@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: devcomponents
 subgroup: icons
-permalink: /components/icons/icons
+permalink: /devcomponents/icons/icons
 
 title: Icons
 description: Icons description

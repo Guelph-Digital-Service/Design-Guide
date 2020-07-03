@@ -1,8 +1,8 @@
 ---
 layout: component-detail
-group: components
+group: devcomponents
 subgroup: navigation
-permalink: /components/navigation/breadcrumbs.html
+permalink: /devcomponents/navigation/breadcrumbs.html
 
 title: Breadcrumbs
 description: Ordered list showing what level you are on in reference to the site

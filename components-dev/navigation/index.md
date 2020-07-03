@@ -1,8 +1,8 @@
 ---
 layout: component-category
-group: components
+group: devcomponents
 subgroup: navigation
-permalink: /components/navigation/
+permalink: /devcomponents/navigation/
 
 title: Navigation
 description: Components for wayfinding (see also [headers and footers](../headers-and-footers/index.html))
