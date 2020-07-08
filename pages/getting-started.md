@@ -6,7 +6,7 @@ permalink: /getting-started
 ---
 
 ## Downloading
-If you aren't working on a site or application that does not already have the City of Guelph Design System files or resources already included, then you'll need to start by downloading the systems that you'll be working with:
+If you are working on a site or application that does not already have the City of Guelph Design System files or resources already included, then you'll need to start by downloading the systems that you'll be working with:
 
 [Download Design System Files]({{ "/downloads" | prepend: site.baseurl }}){: .c-btn}
 {: .txtcenter}
@@ -14,7 +14,7 @@ If you aren't working on a site or application that does not already have the Ci
 
 
 ## Conventions
-Whether you are a developer or designer, if you are going to be coding along-side this design system - *please* start by learning more about our [corporate identity]({{ "/guidelines/corporateidentity" | prepend: site.baseurl }}), [AODA standards]({{ "/guidelines/accessibility" | prepend: site.baseurl }}), and each of the other [guidelines]({{ "/guidelines/" | prepend: site.baseurl }}).
+Whether you are a developer or designer, if you are going to be coding along-side this design system - *please* start by learning more about our [guidelines]({{ "/guidelines/" | prepend: site.baseurl }}).
 
 
 

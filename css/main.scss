@@ -298,6 +298,10 @@ code[class*="language-"], pre[class*="language-"] {
   background-color: $color-app-green;
 }
 
+.c-badge--warning {
+  background-color: $color-app-orange;
+}
+
 .c-badge--caution {
   background-color: $color-app-blue;
 }
@@ -327,6 +331,37 @@ code[class*="language-"], pre[class*="language-"] {
     white-space: nowrap;
 }
 
+
+/*------------------------------------*\
+  #Color Palette
+\*------------------------------------*/
+.pl-palette{
+    margin-bottom: 3em;
+}
+
+.pl-palette-color {
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.pl-palette-color .pl-palette-variable {
+    font-weight: 600;
+    color: #707070;
+}
+
+.pl-palette-color {
+    text-align: center;
+}
+
+.pl-palette-color .pl-palette-preview {
+    border-radius: 2px;
+    width: 125px;
+    height: 50px;
+}
 
 
 /*------------------------------------*\

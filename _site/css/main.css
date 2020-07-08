@@ -671,6 +671,8 @@ code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
 
 .c-badge--positive { background-color: #00af53; }
 
+.c-badge--warning { background-color: #ff7815; }
+
 .c-badge--caution { background-color: #225896; }
 
 /*------------------------------------*\ #BADGES
@@ -678,6 +680,18 @@ code[class*="language-"], pre[class*="language-"] { text-shadow: none; }
 .c-table-container { width: 100%; overflow-x: auto; overflow-y: hidden; background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), white 70%) right, linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 70%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0%, transparent 70%) right; background-repeat: no-repeat; background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%; background-attachment: local, local, scroll, scroll; }
 
 .c-table__cell:first-child { white-space: nowrap; }
+
+/*------------------------------------*\ #Color Palette
+\*------------------------------------*/
+.pl-palette { margin-bottom: 3em; }
+
+.pl-palette-color { display: inline-block; padding: 4px; margin-bottom: 8px; margin-right: 8px; border: 1px solid #eee; text-align: center; }
+
+.pl-palette-color .pl-palette-variable { font-weight: 600; color: #707070; }
+
+.pl-palette-color { text-align: center; }
+
+.pl-palette-color .pl-palette-preview { border-radius: 2px; width: 125px; height: 50px; }
 
 /*------------------------------------*\ #LAYOUT TWEAKS
 \*------------------------------------*/

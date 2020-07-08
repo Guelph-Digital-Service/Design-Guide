@@ -8,6 +8,8 @@
 {% assign badge = "negative" %}
 {% elsif status == 'Complete' %}
 {% assign badge = "positive" %}
+{% elsif status == 'Undocumented' %}
+{% assign badge = "warning" %}
 {% else %}
 {% assign badge = "caution" %}
 {% endif %}

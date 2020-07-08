@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+{% include page-header.html %}
+
+<div class="l-linelength-container">
+
+	<div class="c-text-passage">
+		{{ content | markdownify }}
+
+    <h3> Brand Colour Palette </h3>
+    <div class="pl-palette">
+    {% for brandcolour in page.brand-colours %}
+        <div class="pl-palette-color">
+            <div class="pl-palette-preview" style="background-color:var({{ brandcolour.name }});"></div>
+            <div class="pl-palette-variable">{{ brandcolour.name }}</div>
+            <div class="pl-palette-value">{{ brandcolour.value }}</div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <h3> Basic Colour Palette </h3>
+    <div class="pl-palette">
+    {% for basecolour in page.basic-colours %}
+        <div class="pl-palette-color" >
+            <div class="pl-palette-preview" style="background-color:var({{ basecolour.name }});"></div>
+            <div class="pl-palette-variable">{{ basecolour.name }}</div>
+            <div class="pl-palette-value">{{ basecolour.value }}</div>
+        </div>
+    {% endfor %}
+    </div>
+
+    <h3> Neutral Colour Palette </h3>
+    <div class="pl-palette">
+    {% for neutcolour in page.neutral-colours %}
+        <div class="pl-palette-color">
+            <div class="pl-palette-preview" style="background-color:var({{ neutcolour.name }});"></div>
+            <div class="pl-palette-variable">{{ neutcolour.name }}</div>
+            <div class="pl-palette-value">{{ neutcolour.value }}</div>
+        </div>
+    {% endfor %}
+    </div>
+
+
+	</div><!--end c-text-passage-->
+
+</div><!--l-linelength-container-->

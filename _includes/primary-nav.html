@@ -93,6 +93,14 @@
 
 			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'components' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/components' %} is-active{% endif %}">
 
+				{% for my_page in site.pages %}
+					{% if my_page.url == '/components' %}
+						<li class="c-primary-nav__item">
+							<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">Overview</a>
+						</li>
+					{% endif %}
+				{% endfor %}
+
         {% include primary-nav-item.html label='Buttons' subgroup='buttons' %}
 
 				{% include primary-nav-item.html label='Callouts' subgroup='callouts' %}
@@ -123,6 +131,14 @@
 			</a><!--end c-primary-nav__link-->
 
 			<ul class="c-primary-nav__sublist js-nav-dropdown {% assign post_index = '0' %}{% for my_page in site.pages %}{% if my_page.group == 'devcomponents' %}{% capture post_index %}{{ post_index | plus: '1' }}{% endcapture %}{% endif %}{% endfor %}{% if page.url contains '/devcomponents' %} is-active{% endif %}">
+
+				{% for my_page in site.pages %}
+					{% if my_page.url == '/devcomponents' %}
+						<li class="c-primary-nav__item">
+							<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">Overview</a>
+						</li>
+					{% endif %}
+				{% endfor %}
 
 				{% include primary-nav-item.html label='Blocks and cards' subgroup='blocks-and-cards' %}
 
@@ -161,17 +177,19 @@
 
 					{% include primary-nav-item.html label='Page Templates' subgroup='templates' %}
 
-				{% for my_page in site.pages %}
-					{% if my_page.title %}
-						{% if my_page.group == "wptheme" %}
-						<li class="c-primary-nav__item">
-							<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
-								{{ my_page.title }}
-							</a>
-						</li>
+					{% include primary-nav-item.html label='Post Types' subgroup='cpt' %}
+
+					{% for my_page in site.pages %}
+						{% if my_page.title %}
+							{% if my_page.group == "wptheme" %}
+							<li class="c-primary-nav__item">
+								<a class="c-primary-nav__link {% if my_page.url == page.url %}is-active is-current{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
+									{{ my_page.title }}
+								</a>
+							</li>
+							{% endif %}
 						{% endif %}
-					{% endif %}
-				{% endfor %}
+					{% endfor %}
 
 
 				</ul>
