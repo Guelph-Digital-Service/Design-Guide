@@ -13,7 +13,7 @@ layout: default
     <div class="pl-palette">
     {% for brandcolour in page.brand-colours %}
         <div class="pl-palette-color">
-            <div class="pl-palette-preview" style="background-color:var({{ brandcolour.name }});"></div>
+            <div class="pl-palette-preview" style="background-color:{{ brandcolour.value }};"></div>
             <div class="pl-palette-variable">{{ brandcolour.name }}</div>
             <div class="pl-palette-value">{{ brandcolour.value }}</div>
         </div>
@@ -24,7 +24,7 @@ layout: default
     <div class="pl-palette">
     {% for basecolour in page.basic-colours %}
         <div class="pl-palette-color" >
-            <div class="pl-palette-preview" style="background-color:var({{ basecolour.name }});"></div>
+            <div class="pl-palette-preview" style="background-color:{{ basecolour.value }};"></div>
             <div class="pl-palette-variable">{{ basecolour.name }}</div>
             <div class="pl-palette-value">{{ basecolour.value }}</div>
         </div>
@@ -35,7 +35,7 @@ layout: default
     <div class="pl-palette">
     {% for neutcolour in page.neutral-colours %}
         <div class="pl-palette-color">
-            <div class="pl-palette-preview" style="background-color:var({{ neutcolour.name }});"></div>
+            <div class="pl-palette-preview" style="background-color:{{ neutcolour.value }};"></div>
             <div class="pl-palette-variable">{{ neutcolour.name }}</div>
             <div class="pl-palette-value">{{ neutcolour.value }}</div>
         </div>

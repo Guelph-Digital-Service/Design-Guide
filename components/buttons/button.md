@@ -4,13 +4,13 @@ group: components
 subgroup: buttons
 permalink: /components/buttons/button.html
 
-title: Button
-description: Button description
+title: Pretty Button
+description: "A 'Pretty Button' is distinct from a standard button, which should be used only to call a script or server-side function. A 'Pretty Button' should only be used on links (`<a>`) that require some extra flare. These include for example: links which direct the user to 'learn more', 'provide feeedback' or 'apply'."
 
 variations:
-- title: Button
+- title: Pretty Button
   description: Button description
-  styleModifier: c-btn
+  styleModifier: prettybtn
   includeClassification: molecules
   includeCategory: 02-blocks
   includeName: card
