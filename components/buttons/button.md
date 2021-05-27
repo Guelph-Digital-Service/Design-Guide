@@ -2,48 +2,26 @@
 layout: component-detail
 group: components
 subgroup: buttons
-permalink: /components/buttons/button.html
+permalink: /components/buttons/button
 
-title: Pretty Button
-description: "A 'Pretty Button' is distinct from a standard button, which should be used only to call a script or server-side function. A 'Pretty Button' should only be used on links (`<a>`) that require some extra flare. These include for example: links which direct the user to 'learn more', 'provide feeedback' or 'apply'."
+title: Button
+description: " This button is a restylized version of the Bootstrap 3 button. It is now deprecated and has been replaced with Pretty Buttons on guelph.ca "
+status: Deprecated
 
 variations:
-- title: Pretty Button
-  description: Button description
-  styleModifier: prettybtn
-  includeClassification: molecules
-  includeCategory: 02-blocks
-  includeName: card
-
-usage:
-- title: When to use
-  description: Usage description.
-- title: When to consider an alternative
-  description: Alternative usage.
+- title: Button - Bootstrap
+  description: A button, reconfigured from Bootstrap 3 to match guelph.ca styles
+  styleModifier: btn btn-success
+  includeCat: button
 
 classes:
-- className: c-hero
-  required : yes
-  description: Apply to the hero block's containing HTML element. This class sets up the background-image handling and text color for the unit. The `c-hero` element should have just one immediate child, the `c-hero__body` element. Note, too, that the unit's hero image should be applied as a background image to this `c-hero` element.
-- className: c-hero--bare
-  modifier : yes
-  description: Add to the `c-hero` element to remove the default gradient overlay from the hero image.
-- className: c-hero--tinted
-  modifier : yes
-  description: Add to the `c-hero` element to replace the default gradient overlay with a solid, uniform tint.
-- className: c-hero__body
-  required: yes
-  description: Apply to the container for the card body, Which typically includes a title and description (see below) but can include any arbitrary markup including buttons for a call to action. The class manages the card's background gradient.
-- className: c-hero__title
-  recommended: yes
-  description: Apply to the card's heading inside the card body. The recommended element for this class is `<h1>`.
-- className: c-hero__desc
-  recommended: yes
-  description: Apply to the card's description text inside the card body. The recommended element for this class is `<p>`.
+- className: btn
+  description: This is a required class which identifies a link as a button, as defined in Bootstrap
+- className: btn-success
+  description: Tells a `btn` class it should be a 'success button'. This is the class that was reconfigured for utilization on guelph.ca
 
 fine-print:
-- version: 0.3
-  update: April 27, 2017
-  owner: Jane Doe
+- version: 0.1
+  update: May 13, 2021
 
 ---

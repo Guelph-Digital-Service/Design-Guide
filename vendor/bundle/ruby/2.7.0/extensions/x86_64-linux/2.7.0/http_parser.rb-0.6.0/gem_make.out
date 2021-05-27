@@ -1,0 +1,22 @@
+current directory: /mnt/c/Users/nduri/Code/GitHub/_GuelphDigitalService/GDS-Design-Guide/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20210513-1431-1r5odds.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/nduri/Code/GitHub/_GuelphDigitalService/GDS-Design-Guide/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+make: Warning: File 'Makefile' has modification time 2.8 s in the future
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /mnt/c/Users/nduri/Code/GitHub/_GuelphDigitalService/GDS-Design-Guide/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+make: Warning: File 'Makefile' has modification time 2.8 s in the future
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.so
+make: warning:  Clock skew detected.  Your build may be incomplete.
+
+current directory: /mnt/c/Users/nduri/Code/GitHub/_GuelphDigitalService/GDS-Design-Guide/vendor/bundle/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+make: Warning: File 'Makefile' has modification time 2.1 s in the future
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20210513-1431-18bu6j2
+make: warning:  Clock skew detected.  Your build may be incomplete.

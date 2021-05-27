@@ -1,0 +1,4545 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+	<title>Pretty Button | Guelph Digital Service Design Guide</title>
+	<meta name="description" content="Tobefilledinlater
+">
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="stylesheet" href="/GDS-design-system/css/GDSDS_main.css">
+	<link rel="icon" href="/assets/favicon.ico">
+
+	<link rel="canonical" href="http://localhost:4000/components/buttons/prettybtn">
+</head>
+
+	<body>
+        <div class="l-page-layout l-page-layout--two-column-fixed">
+            <div class="l-page-layout__secondary">
+                <header class="c-header c-header--vertical" role="banner">
+  <a class="skip-main sr-only" href="#main">Skip to main content</a>
+    <div class="c-header__inner">
+
+        <h3 class="c-logo">
+	<a href="/" class="c-logo__link" rel="home">
+		 <img style="width: 100%; max-width: 300px;" src="/assets/COGlogo.png" alt="City of Guelph Logo" width="500">
+	</a><!--end c-logo__link-->
+</h3><!--end c-logo-->
+
+
+    	<button class="c-btn c-btn--small c-header__nav-btn js-nav-trigger">Menu</button>
+
+    	<div class="c-header__nav-container js-nav-panel">
+
+			<nav class="c-primary-nav">
+
+	<ul class="c-primary-nav__list c-primary-nav__list--flush js-nav-panel" role="tablist" aria-multiselectable="true">
+
+		<li class="c-primary-nav__item">
+			<a href="/getting-started"
+				class="c-primary-nav__link ">
+				<span class="c-primary-nav__text">Getting started</span>
+			</a>
+		</li><!-- end c-nav__list__item -->
+
+		<li class="c-primary-nav__item ">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger "
+				href="/guidelines/">
+
+				<span class="c-primary-nav__text">Guidelines</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/assets/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul
+				class="c-primary-nav__sublist js-nav-dropdownn ">
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines">
+						
+
+						<span class="c-primary-nav__text">Overview</span>
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/corporateidentity">
+						
+
+						Corporate Identity
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/code.html">
+						
+
+						Code conventions
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/webstandards">
+						
+
+						Web standards
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/accessibility">
+						
+
+						Accessibility (AODA)
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/writing">
+						
+
+						Writing
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/guidelines/browsers">
+						
+
+						Browser support
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+			</ul>
+		</li>
+
+
+		<li class="c-primary-nav__item ">
+
+			<a href="/styles/index.html"
+				class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger ">
+
+				<span class="c-primary-nav__span">Styles</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/assets/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul
+				class="c-primary-nav__sublist js-nav-dropdown ">
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/styles/">
+						
+
+						<span class="c-primary-nav__text">Overview</span>
+
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/styles/color">
+						
+
+						Colour
+
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/styles/typography.html">
+						
+
+						Typography
+
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/styles/iconography.html">
+						
+
+						Iconography
+
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/styles/grid">
+						
+
+						Grid Systems
+
+						
+					</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</ul>
+
+		</li><!-- end c-nav__list__item -->
+
+
+		<li class="c-primary-nav__item is-active">
+			<a class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger  is-active  is-current"
+				href="/components/">
+
+				<span class="c-primary-nav__text">Components</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/assets/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+			<!--end c-primary-nav__link-->
+
+			<ul
+				class="c-primary-nav__sublist js-nav-dropdown  is-active">
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/components">Overview</a>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+				<li class="c-primary-nav__subitem is-active">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  is-active" href="#">
+
+		<span class="c-primary-nav__text">Buttons</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown  is-active">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem is-active">
+
+                <a class="c-primary-nav__sublink " href="/components/buttons/button">
+			    	Button
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem is-active">
+
+                <a class="c-primary-nav__sublink " href="/components/buttons/colouredbtn">
+			    	Coloured Button
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem is-active">
+
+                <a class="c-primary-nav__sublink is-active is-current" href="/components/buttons/prettybtn">
+			    	Pretty Button
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				<li class="c-primary-nav__subitem ">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
+
+		<span class="c-primary-nav__text">Blocks and cards</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown ">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/alert">
+			    	Alert
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/callout">
+			    	Callout
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/thumbnail">
+			    	Thumbnail
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/blocks-and-cards/well">
+			    	Well
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				<li class="c-primary-nav__subitem ">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
+
+		<span class="c-primary-nav__text">Icons</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown ">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/icons/icons-font-awesome">
+			    	Font Awesome Icons
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/icons/icons-material">
+			    	Material Icons
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				<li class="c-primary-nav__subitem ">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
+
+		<span class="c-primary-nav__text">Links</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown ">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/links/link">
+			    	Standard Link
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/links/prettylink">
+			    	Pretty Link
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				<li class="c-primary-nav__subitem ">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
+
+		<span class="c-primary-nav__text">Media and Text</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown ">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/media/progress-bar">
+			    	Progress Bar
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/media/table">
+			    	Table
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				<li class="c-primary-nav__subitem ">
+
+	<a class="c-primary-nav__sublink c-primary-nav__sublink--has-children js-nav-dropdown-trigger  " href="#">
+
+		<span class="c-primary-nav__text">Text</span>
+
+		
+		<svg class="c-icon c-primary-nav__subicon" aria-hidden="true">
+			<use href="/assets/icons.svg#chevron-right"></use>
+		</svg>
+		
+	</a><!--end c-primary-nav__link-->
+
+	
+	<ul class="c-primary-nav__sublist js-nav-dropdown ">
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+			<li class="c-primary-nav__subitem ">
+
+                <a class="c-primary-nav__sublink " href="/components/text/text-passage.html">
+			    	Text passage
+				</a><!-- end c-primary-nav__link -->
+
+			</li><!-- end c-primary-nav__item -->
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+
+		
+
+	
+</ul><!-- end c-primary-nav__sublist-->
+
+	
+
+</li><!-- end c-primary-nav__item-->
+
+
+				
+
+				
+
+			</ul>
+		</li>
+
+		
+
+		<li class="c-primary-nav__item ">
+
+			<a href="/page-templates/"
+				class="c-primary-nav__link c-primary-nav__link--has-children js-nav-dropdown-trigger ">
+
+				<span class="c-primary-nav__span">Page Templates</span>
+
+				<svg class="c-icon c-primary-nav__icon" aria-hidden="true">
+					<use href="/assets/icons.svg#chevron-right"></use>
+				</svg>
+
+			</a>
+
+			<ul
+				class="c-primary-nav__sublist js-nav-dropdownn ">
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/page-templates">
+						
+
+						<span class="c-primary-nav__text">Overview</span>
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/page-templates/default">
+						
+
+						Default template
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+				<li class="c-primary-nav__item">
+					<a class="c-primary-nav__link "
+						href="/page-templates/default-no-sidebar">
+						
+
+						Default, No Sidebar template
+
+						
+					</a>
+				</li>
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+
+				
+			</ul>
+
+		</li><!-- end c-nav__list__item -->
+
+		
+		<li class="c-primary-nav__item">
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/support"
+				class="c-primary-nav__link ">
+				<span class="c-primary-nav__text">Support</span>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</li><!-- end c-nav__list__item -->
+
+		<li class="c-primary-nav__item">
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<a href="/contribute"
+				class="c-primary-nav__link ">
+				<span class="c-primary-nav__text">Contribute</span>
+			</a>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+		</li><!-- end c-nav__list__item -->
+
+	</ul><!-- end c-nav__list -->
+
+</nav><!-- end c-nav -->
+
+    	</div><!--end c-header__nav-container-->
+
+    </div><!--end c-header__inner-->
+
+</header><!--end c-header-->
+
+            </div><!--end l-page-layout__secondary-->
+            <div class="l-page-layout__main">
+                <main id="main" >
+                	<div class="l-container">
+                        
+<ol class="c-breadcrumbs">
+
+	<li class="c-breadcrumbs__item">
+		<a href="/components" class="c-breadcrumbs__link">Components</a>
+	</li><!-- end c-breadcrumbs__item -->
+
+	
+	<li class="c-breadcrumbs__item">
+		<a href="/components/buttons" class="c-breadcrumbs__link">Buttons</a>
+	</li><!-- end c-breadcrumbs__item -->
+	
+
+</ol><!-- end c-breadcrumbs -->
+
+
+
+<div class="c-page-header">
+
+	<h1 class="c-page-header__title">Pretty Button 
+
+
+
+
+<span class="c-badge c-badge--positive">Complete</span>
+
+</h1>
+	
+	<div class="c-page-header__desc">
+		<p>A ‘pretty’ buttons using guelph.ca styles, allows for different prefix icons using classes to identify button usages. A ‘Pretty Button’ should only be used on links (<code class="highlighter-rouge">&lt;a&gt;</code>) that require some extra flare. These include for example: links which direct the user to ‘learn more’, ‘provide feeedback’ or ‘apply’</p>
+
+	</div>
+	
+
+</div><!-- end c-page-header -->
+
+
+<section class="c-section">
+
+	<div class="c-tabs js-tabs">
+
+		<ul class="c-tabs__list">
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---default" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---default">Pretty Button - Default</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---view" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---view">Pretty Button - View</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---feedback" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---feedback">Pretty Button - Feedback</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---help" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---help">Pretty Button - Help</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---learn" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---learn">Pretty Button - Learn</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---report" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---report">Pretty Button - Report</a>
+			</li><!-- end c-tabs__item -->
+			
+			<li class="c-tabs__item">
+				<a href="#tab-pretty-button---pay" class="c-tabs__link js-tab" data-code-tabs="tab-pretty-button---pay">Pretty Button - Pay</a>
+			</li><!-- end c-tabs__item -->
+			
+
+
+		</ul><!-- end c-tabs__list -->
+
+		<div class="c-tabs__body">
+
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---default">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Default <code class="u-font-size-med">prettybtn</code></h5>
+						<div><p>A standard button using guelph.ca styles</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn/prettybtn.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---view">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - View <code class="u-font-size-med">prettybtn link-view</code></h5>
+						<div><p>A button defining a link that the user will ‘view’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-view/prettybtn-view.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---feedback">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Feedback <code class="u-font-size-med">prettybtn link-feedback</code></h5>
+						<div><p>A button defining a link that the user will use to provide ‘feedback’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-feedback/prettybtn-feedback.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---help">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Help <code class="u-font-size-med">prettybtn link-help</code></h5>
+						<div><p>A button defining a link that the user will use to get ‘help’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-help/prettybtn-help.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---learn">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Learn <code class="u-font-size-med">prettybtn link-learn</code></h5>
+						<div><p>A button defining a link that the user will use to ‘learn’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-learn/prettybtn-learn.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---report">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Report <code class="u-font-size-med">prettybtn link-report</code></h5>
+						<div><p>A button defining a link that the user will use to make a ‘report’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-report/prettybtn-report.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+			<div class="c-tabs__panel js-tabs-panel" id="tab-pretty-button---pay">
+
+				<section class="c-section">
+					<header class="c-section__header">
+						<h5 class="c-section__title">Pretty Button - Pay <code class="u-font-size-med">prettybtn link-pay</code></h5>
+						<div><p>A button defining a link that the user will use to make a ‘payment’</p>
+ </div>
+					</header>
+
+					
+
+					
+
+						<div class="iffframe">
+							<iframe class="iffframe__iframe" frameBorder="0" width="100%" height="100%" src="/_includes/patterns/prettybtn/prettybtn-pay/prettybtn-pay.rendered.html"></iframe>
+							<div class="iffframe__handle"></div>
+						</div><!--end iffframe-->
+					
+
+				</section><!--end section-->
+
+			</div><!--end c-tabs__panel-->
+			
+
+		</div><!--end c-tabs__body-->
+
+	</div><!--end c-tabs-->
+
+	<ul class="c-tabs-list js-tabs-list">
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---default">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-1" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-1">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-1">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-1">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---view">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-2" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-2">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-2">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-2">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn link-view medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---feedback">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-3" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-3">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-3">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-3">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn medium link-feedback" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---help">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-4" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-4">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-4">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-4">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn link-request medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---learn">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-5" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-5">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-5">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-5">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn link-learn medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---report">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-6" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-6">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-6">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-6">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn link-report medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+		<li class="c-tabs-list__item js-tabs-list-item" data-code-tabs="tab-pretty-button---pay">
+
+			
+			<div class="c-tabs test-tabs  js-tabs">
+
+				<ul class="c-tabs__list">
+
+					<li class="c-tabs__item">
+						<a href="#html-7" class="c-tabs__link js-tab">HTML</a>
+					</li><!-- end c-tabs__item -->
+
+				</ul><!-- end c-tabs__list -->
+
+				<div class="c-tabs__body ">
+
+					<div class="c-tabs__panel js-tabs-panel" id="html-7">
+
+						
+
+						<div class="pattern-code">
+							<button class="c-btn pattern-code-copy-btn" data-clipboard-target="#pattern-code-7">Copy</button>
+							<pre class="highlight pattern-code-block"><code class="language-html" id="pattern-code-7">
+<figure class="highlight"><pre><code class="language-liquid" data-lang="liquid">&lt;a class="prettybtn link-pay medium" href="/living/arts-and-culture/"&gt;
+  Button Text
+&lt;/a&gt;</code></pre></figure>
+</code></pre>
+						</div>
+
+					</div><!--end c-tabs__panel-->
+
+				</div><!-- end c-tabs__body-->
+
+			</div><!-- end c-tabs -->
+			
+
+			</li><!-- end c-tabs-list__item -->
+
+		
+
+	</ul><!-- end c-tabs-list -->
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="c-section-header ">
+
+		<h1 class="c-section-header__title">Usage</h1>
+
+	</div><!-- end c-section-header -->
+
+	<div class="c-text-passage l-linelength-container">
+
+		
+
+
+	</div><!-- end c-text-passage -->
+
+	<div class="c-table-container">
+
+		<table class="c-table ">
+
+			<thead class="c-table__header">
+
+				<tr class="c-table__header-row">
+				<th scope="col" class="c-table__header-cell ">Class Name</th>
+				<th scope="col" class="c-table__header-cell ">Description</th>
+				</tr><!-- c-table__header-row -->
+
+			</thead><!-- end c-table__header -->
+
+			<tbody class="c-table__body ">
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						prettybtn
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Apply to an <code class="highlighter-rouge">&lt;a&gt;</code> tag that you would like to become a pretty button. This will attach the baseline styles.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-view
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘view’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-report
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘report’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-pay
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘pay’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-learn
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘learn’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-help
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘help’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+				<tr class="c-table__row ">
+
+					<td class="c-table__cell ">
+						link-feedback
+					</td>
+
+					<td class="c-table__cell ">
+						
+						<p>Add to the <code class="highlighter-rouge">prettybtn</code> element to add ‘feedback’ icon.</p>
+
+					</td>
+
+				</tr><!-- end c-table__row -->
+				
+
+			</tbody><!-- end c-table__body -->
+
+		</table><!--end c-table-->
+
+	</div><!--end c-table-container-->
+
+</section><!-- end c-section -->
+
+<section class="c-section">
+
+	<div class="c-section-header ">
+
+		<h1 class="c-section-header__title">Fine print</h1>
+
+	</div><!-- end c-section-header -->
+
+	<div class="c-text-passage l-linelength-container">
+		
+        <ul>
+            <li>Version: 0.3</li>
+            <li>Last Updated: May 13, 2021</li>
+            
+        </ul>
+		
+	</div><!-- end c-text-passage -->
+
+	<a href="#" class="c-btn">Discuss this component</a><!-- end c-btn -->
+
+</section><!-- end c-section -->
+
+	                </div><!--end l-container-->
+				</main><!--end role=main-->
+                <script src="/js/vendor/jquery-3.1.0.min.js"></script>
+<script src="/js/vendor/prism.js"></script>
+<script src="/js/vendor/iframe-resizer.min.js"></script>
+<script src="/js/vendor/clipboard.min.js"></script>
+<script src="/js/style-guide.js"></script>
+
+            </div><!--end l-page-layout__main-->
+        </div><!--end l--two-column-fixed-->
+	</body>
+</html>

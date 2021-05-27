@@ -4,7 +4,7 @@ viewtype: components
 group: components
 permalink: /components
 
-title: All Author Components
+title: All Components
 description: Placeholder text...
 
 ---

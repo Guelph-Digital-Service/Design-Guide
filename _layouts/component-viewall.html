@@ -30,7 +30,7 @@ layout: default
 
                   <p class="u-margin-bottom">{{ variation.description }} </p>
 
-                  <a href="{{ componentPage.permalink  | prepend: site.baseurl }}" class="c-btn c-btn--small c-btn--primary">See code and usage</a>
+                  <a href="{{ componentPage.permalink  | prepend: site.baseurl }}" class=" c-btn c-btn--small c-btn--primary" style="margin-bottom:0.5em;">See code and usage</a>
 
                 </header>
 
@@ -38,17 +38,13 @@ layout: default
 
                   <div class="c-pattern-example u-margin-bottom-double">
 
-                    {% if variation.includeClassification == 'atoms' %}
-                    {% assign atomicNumber = "00" %}
-                    {% elsif variation.includeClassification == 'molecules' %}
-                    {% assign atomicNumber = "01" %}
-                    {% elsif variation.includeClassification == 'organisms' %}
-                    {% assign atomicNumber = "02" %}
+                    {% if variation.includeCat and variation.includeSubCat %}
+                      {% capture iframePath %}/_includes/patterns/{{ variation.includeCat }}/{{ variation.includeCat }}-{{variation.includeSubCat}}/{{ variation.includeCat }}-{{variation.includeSubCat}}.rendered.html{% endcapture %}
+                    {% elsif variation.includeCat %}
+                      {% capture iframePath %}/_includes/patterns/{{ variation.includeCat }}/{{ variation.includeCat }}/{{ variation.includeCat }}.rendered.html{% endcapture %}
+                    {% else %}
+                      {% capture iframePath %}NA{% endcapture %}
                     {% endif %}
-
-                    {% capture componentString %}{{ atomicNumber }}-{{ variation.includeClassification }}-{{ variation.includeCategory }}-{{ variation.includeName }}{% endcapture %}
-
-                    {% capture iframePath %}/patterns/{{ componentString }}/{{ componentString }}.rendered.html{% endcapture %}
 
                     <div class="iffframe">
 

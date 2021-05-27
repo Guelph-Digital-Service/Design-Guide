@@ -12,7 +12,7 @@ This repository uses [Jekyll](https://jekyllrb.com/), a static site generator wh
 ```
 gem install bundler
 bundle install
-jekyll serve
+bundle exec jekyll serve
 ```
 
 ## Contributing
