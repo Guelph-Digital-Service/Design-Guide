@@ -10,7 +10,7 @@ title: Guelph Digital Service Design Guide
 email: webservices@guelph.ca
 description: > # this means to ignore newlines until "baseurl:"
   Tobefilledinlater
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/GDS-Design-Guide" # the subpath of your site, e.g. /blog
 url: "//Guelph-Digital-Service.github.io" # the base hostname & protocol for your site
 timezone: Canada/Eastern
 
